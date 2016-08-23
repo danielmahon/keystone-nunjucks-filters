@@ -1,0 +1,23 @@
+{
+  "name": "keystone-nunjucks-filters",
+  "version": "1.0.0",
+  "description": "A collection of nunjucks filters I've found useful for keystonejs or other projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nunjucks",
+    "filters",
+    "keystonejs",
+    "keystone",
+    "helper",
+    "utility",
+    "limit"
+  ],
+  "author": "Daniel Mahon <daniel@mahonstudios.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.15.0"
+  }
+}

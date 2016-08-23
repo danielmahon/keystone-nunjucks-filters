@@ -18,20 +18,14 @@ module.exports = env => {
 
   // Limit Numbers, Strings, Arrays
   env.addFilter('limit', (input, limit) => {
-    if (typeof limit !== 'number') {
-      return input;
-    }
+    if (typeof limit !== 'number') return input;
     if (typeof input === 'string') {
-      if (limit >= 0) {
-        return input.substring(0, limit);
-      }
+      if (limit >= 0) return input.substring(0, limit);
       return input.substr(limit);
     }
     if (Array.isArray(input)) {
       const arrayLimit = Math.min(limit, input.length);
-      if (arrayLimit >= 0) {
-        return _.first(input, arrayLimit);
-      }
+      if (arrayLimit >= 0) return _.first(input, arrayLimit);
       return _.last(input, Math.abs(arrayLimit));
     }
     return input;

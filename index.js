@@ -25,8 +25,8 @@ module.exports = env => {
     }
     if (Array.isArray(input)) {
       const arrayLimit = Math.min(limit, input.length);
-      if (arrayLimit >= 0) return _.first(input, arrayLimit);
-      return _.last(input, Math.abs(arrayLimit));
+      if (arrayLimit >= 0) return _.take(input, arrayLimit);
+      return _.takeRight(input, Math.abs(arrayLimit));
     }
     return input;
   });

@@ -1,6 +1,6 @@
 {
   "name": "keystone-nunjucks-filters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of nunjucks filters I've found useful for keystonejs or other projects.",
   "main": "index.js",
   "scripts": {
